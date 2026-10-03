@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Web - Owais Raza</title>
+    <!-- Tipografía pública de Google Fonts (Roboto y Pixelify Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos global externa -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Menú de navegación principal -->
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+        <!-- Cabecera principal -->
+        <header class="cabecera-personal">
+            <h1 id="nom-alumne">Owais Raza</h1>
+            <h2 class="subtitulo">Estudiante de Desarrollo de Aplicaciones Multiplataforma</h2>
+        </header>
+
+        <hr class="separador">
+
+        <!-- Sección de presentación y perfil -->
+        <main class="bloque-perfil">
+            <div class="tarjeta perfil-grid">
+                <div class="foto-columna">
+                    <img src="imagenes/perfil.jpg" alt="Foto de perfil de Owais Raza" class="imagen-perfil" width="200">
+                </div>
+                <div class="texto-columna">
+                    <h2>Sobre Mí</h2>
+                    <p class="presentacion">
+                        ¡Hola! Soy estudiante de informática en el <strong>Institut Esteve Terradas i Illa</strong>.&nbsp;
+                        Me apasiona el desarrollo de aplicaciones multiplataforma, la arquitectura de software,
+                        la maquetación web y las soluciones tecnológicas eficientes.<br>
+                        Actualmente estoy enfocado en consolidar conocimientos en desarrollo backend y frontend,
+                        creando proyectos funcionales, limpios y bien estructurados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección de habilidades -->
+            <section class="tarjeta">
+                <h2>Habilidades Principales</h2>
+                <p>Tecnologías y áreas técnicas en las que trabajo activamente:</p>
+                <!-- id="base" para cumplir la jerarquía combinada (#base > li) -->
+                <ul id="base" class="lista-habilidades">
+                    <li>Programación en Java y Programación Orientada a Objetos</li>
+                    <li>Desarrollo web con HTML5 semántico y maquetación CSS3</li>
+                    <li>Diseño y consulta de Bases de Datos Relacionales (SQL)</li>
+                    <li>Administración básica y entorno de trabajo en Linux y Windows</li>
+                </ul>
+            </section>
+
+            <!-- Sección de objetivos -->
+            <section class="tarjeta">
+                <h2>Objetivos Profesionales y Académicos</h2>
+                <ol class="lista-objetivos">
+                    <li>Completar con éxito el ciclo formativo de Grado Superior (DAM).</li>
+                    <li>Realizar el periodo de Formación en Centros de Trabajo (FCT) en una empresa tecnológica.</li>
+                    <li>Incorporarme profesionalmente a un equipo de desarrollo de software para crear soluciones de impacto.</li>
+                </ol>
+            </section>
+        </main>
+
+        <!-- Pie de página con copyright, enlaces, correo y teléfono -->
+        <footer id="pie-pagina">
+            <p>&copy; 2026 Owais Raza &nbsp;|&nbsp; Todos los derechos reservados.</p>
+            <div class="enlaces-contacto">
+                <a href="https://github.com/owaisrazashe" target="_blank" rel="noopener">GitHub</a>
+                <span class="separador-punto">&bull;</span>
+                <a href="mailto:oraza@iesesteveterradas.cat">Correo electrónico</a>
+                <span class="separador-punto">&bull;</span>
+                <a href="tel:+34612345678">Teléfono (+34 612 345 678)</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
