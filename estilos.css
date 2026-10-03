@@ -1,361 +1,119 @@
 /* ==========================================================================
-   DAM1M04-Exercici-CSS: Hoja de Estilos Global
-   Autor: Owais Raza (Institut Esteve Terradas i Illa)
+   DAM1M04-Exercici-CSS: Estilos CSS Básicos
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   1. Tipografía pública (Google Fonts: Roboto) y reseteo básico
-   -------------------------------------------------------------------------- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* 1. Tipografía pública para los elementos (Google Fonts: Roboto) */
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background-color: #f1f5f9;
+    margin: 20px;
+    background-color: #f8fafc;
     color: #1e293b;
-    line-height: 1.7;
-    font-size: 16px;
-    padding-bottom: 40px;
+    line-height: 1.6;
 }
 
-/* --------------------------------------------------------------------------
-   2. Definición de títulos y enlaces por selector (h1, h2, a)
-   -------------------------------------------------------------------------- */
+/* 2. Definición de títulos y enlaces por selector (h1, h2, a) */
 h1 {
     color: #0f172a;
-    font-size: 2.3rem;
-    font-weight: 800;
-    margin-bottom: 6px;
-    letter-spacing: -0.5px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 h2 {
     color: #0284c7;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-h3 {
-    color: #334155;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-}
-
-p {
-    margin-bottom: 14px;
-    color: #334155;
-}
-
-/* Selector para enlaces */
 a {
     color: #0284c7;
     text-decoration: none;
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    font-weight: 500;
 }
 
-/* --------------------------------------------------------------------------
-   3. Definición de estilo de enlace con pseudoclase :hover (y :active)
-   -------------------------------------------------------------------------- */
+/* 3. Definición de estilo de enlace :hover */
 a:hover {
     color: #0369a1;
     text-decoration: underline;
 }
 
-a:active {
-    color: #0c4a6e;
-}
-
-/* --------------------------------------------------------------------------
-   4. Definición de elementos por atribut de identificador (#id)
-   -------------------------------------------------------------------------- */
-#nom-alumne {
-    color: #0f172a;
-    text-transform: capitalize;
-    font-size: 2.6rem;
-}
-
-#menu-principal {
-    background-color: #0f172a;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-#menu-principal ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
-/* --------------------------------------------------------------------------
-   5. Jerarquía combinada con mayor (id > element)
-   -------------------------------------------------------------------------- */
-#menu-principal > ul > li {
-    margin: 0 4px;
-}
-
-#menu-principal > ul > li > a {
-    display: inline-block;
-    color: #e2e8f0;
-    padding: 16px 22px;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: all 0.25s ease;
-}
-
-#menu-principal > ul > li > a:hover {
-    color: #38bdf8;
-    background-color: #1e293b;
-    border-bottom: 3px solid #38bdf8;
-    text-decoration: none;
-}
-
-#menu-principal > ul > li > a.activo {
-    color: #ffffff;
-    border-bottom: 3px solid #0284c7;
-    background-color: #1e293b;
-}
-
-/* Jerarquía combinada para la lista de habilidades con id="base" */
-#base > li {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 12px 16px;
-    margin-bottom: 8px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: #0f172a;
-}
-
-/* --------------------------------------------------------------------------
-   6. Definición de elementos por clase (.class)
-   -------------------------------------------------------------------------- */
-.contenedor {
-    max-width: 860px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-.cabecera-personal {
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.subtitulo {
+/* 4. Definición de elementos por atributo class con . */
+.subtitol {
     color: #64748b;
-    font-size: 1.15rem;
-    font-weight: 400;
-}
-
-.separador {
-    border: none;
-    height: 3px;
-    background: linear-gradient(90deg, #0284c7 0%, #38bdf8 50%, #e2e8f0 100%);
-    margin: 20px 0 30px 0;
-    border-radius: 2px;
-}
-
-.tarjeta {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 26px 30px;
-    margin-bottom: 26px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-.perfil-grid {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.foto-columna {
-    flex-shrink: 0;
-}
-
-.imagen-perfil {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #0284c7;
-    box-shadow: 0 8px 16px -2px rgba(2, 132, 199, 0.25);
-    display: block;
-}
-
-.imagen-banner {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.text-center {
-    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 .presentacion {
-    font-size: 1.05rem;
-    color: #334155;
+    font-size: 15px;
+    margin: 12px 0;
 }
 
-/* --------------------------------------------------------------------------
-   7. Definición de estilos de lista con :first-child y :last-child
-   -------------------------------------------------------------------------- */
-.lista-habilidades {
-    list-style: none;
-    padding: 0;
-    margin: 14px 0;
+.imagen {
+    border-radius: 8px;
+    border: 2px solid #cbd5e1;
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
 }
 
-.lista-habilidades li:first-child {
-    border-left: 6px solid #10b981;
-    background-color: #f0fdf4;
-    color: #14532d;
+.nota {
+    background-color: #e0f2fe;
+    padding: 10px 14px;
+    border-left: 4px solid #0284c7;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
-.lista-habilidades li:last-child {
-    border-left: 6px solid #0284c7;
-    background-color: #f0f9ff;
-    color: #0c4a6e;
-    margin-bottom: 0;
-}
-
-/* Listas ordenadas con estilos para primer y último elemento */
-ol {
-    padding-left: 24px;
-    margin: 14px 0;
-}
-
-ol li {
-    padding: 6px 0;
-    color: #334155;
-}
-
-ol li:first-child {
-    font-weight: 600;
+/* 5. Definición de elementos por atributo id con # */
+#titol {
+    font-size: 32px;
+    text-decoration: underline;
     color: #0369a1;
 }
 
-ol li:last-child {
-    border-bottom: 2px dashed #cbd5e1;
-    padding-bottom: 10px;
-}
-
-.lista-tecnologias, .lista-proyectos {
-    list-style: none;
-    padding: 0;
-    margin: 14px 0;
-}
-
-.lista-tecnologias li, .lista-proyectos li {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 12px 16px;
-    margin-bottom: 8px;
+#menu {
+    background-color: #e2e8f0;
+    padding: 10px 15px;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
-.lista-tecnologias li:first-child, .lista-proyectos li:first-child {
-    border-top: 3px solid #0284c7;
+#peu {
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 14px;
 }
 
-.lista-tecnologias li:last-child, .lista-proyectos li:last-child {
-    border-bottom: 3px solid #38bdf8;
-    margin-bottom: 0;
+/* 6. Definición de estilos para elementos de una lista con :first-child y :last-child */
+ul li:first-child, ol li:first-child {
+    font-weight: bold;
+    color: #0f172a;
 }
 
-/* --------------------------------------------------------------------------
-   8. Pseudoelementos ::before y ::after
-   -------------------------------------------------------------------------- */
-/* Pseudoelemento ::before para añadir un icono distintivo a los subtítulos h2 */
-.tarjeta h2::before {
+ul li:last-child, ol li:last-child {
+    color: #0284c7;
+}
+
+/* 7. Jerarquía combinada tipo id > element (ejemplo exacto del enunciado: #base > li) */
+#base > li {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+/* 8. Pseudoelementos ::before y ::after (ejemplo del temario: 👉 y ✔) */
+h2::before {
     content: "👉 ";
     color: #0284c7;
-    margin-right: 4px;
 }
 
-/* Pseudoelemento ::after para añadir marca de verificación en la lista de habilidades */
 #base > li::after {
     content: " ✔";
     color: #10b981;
     font-weight: bold;
-    float: right;
-}
-
-/* Pseudoelemento ::before en la lista de tecnologías */
-.lista-tecnologias li::before {
-    content: "⚡ ";
-    color: #f59e0b;
-}
-
-/* --------------------------------------------------------------------------
-   9. Pie de página (#pie-pagina)
-   -------------------------------------------------------------------------- */
-#pie-pagina {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 22px;
-    text-align: center;
-    color: #64748b;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-.enlaces-contacto {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.enlaces-contacto a {
-    color: #0284c7;
-    font-weight: 500;
-}
-
-.enlaces-contacto a:hover {
-    color: #0369a1;
-}
-
-.separador-punto {
-    color: #cbd5e1;
-}
-
-/* Responsive / adaptación móvil */
-@media (max-width: 650px) {
-    .perfil-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #menu-principal ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #menu-principal > ul > li > a {
-        padding: 10px 16px;
-    }
-
-    #base > li::after {
-        float: none;
-        display: inline-block;
-        margin-left: 6px;
-    }
 }

@@ -2,88 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Owais Raza</title>
-    <!-- Tipografía pública de Google Fonts (Roboto y Pixelify Sans) -->
+    <title>Proyectos - Owais</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <!-- Hoja de estilos global externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-    <!-- Menú de navegación principal -->
-    <nav id="menu-principal">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="proyectos.html" class="activo">Proyectos</a></li>
-        </ul>
+    <nav id="menu">
+        <a href="index.html">Inicio</a> |
+        <a href="estudios.html">Estudios</a> |
+        <a href="proyectos.html" class="activo">Proyectos</a>
     </nav>
 
-    <div class="contenedor">
-        <!-- Cabecera de la página -->
-        <header class="cabecera-personal">
-            <h1>Proyectos Desarrollados</h1>
-            <h2 class="subtitulo">Portafolio práctico de programación y aplicaciones</h2>
-        </header>
+    <h1 id="titol">Proyectos</h1>
 
-        <hr class="separador">
+    <h2>Proyectos personales</h2>
+    <p class="presentacion">Me gusta experimentar con páginas web sencillas y herramientas de inteligencia artificial. Algunos proyectos los hago para practicar y aprender nuevas formas de crear aplicaciones.</p>
 
-        <main>
-            <!-- Banner gráfico de proyectos -->
-            <div class="tarjeta text-center">
-                <img src="imagenes/proyecto.jpg" alt="Imagen representativa de proyectos de software" class="imagen-banner">
-            </div>
+    <ul id="base">
+        <li>Página web personal creada con HTML y CSS.</li>
+        <li>Pruebas de prompts para obtener mejores respuestas de herramientas de IA.</li>
+        <li>Ideas de pequeñas aplicaciones creadas con ayuda de inteligencia artificial.</li>
+    </ul>
 
-            <!-- Proyectos destacados -->
-            <section class="tarjeta">
-                <h2>Proyectos Destacados</h2>
-                <p>
-                    Selección de proyectos de software realizados durante las prácticas y proyectos personales:<br>
-                </p>
-                <ul class="lista-proyectos">
-                    <li>
-                        <strong>Aplicación de Gestión de Tareas (Task Manager)</strong>:
-                        Aplicación de escritorio desarrollada en Java con interfaz gráfica, persistencia de datos y filtros por prioridad.
-                    </li>
-                    <li>
-                        <strong>Videojuego Arcade 2D en Java</strong>:
-                        Juego desarrollado aplicando patrones de diseño POO, bucle de renderizado y detección de colisiones.
-                    </li>
-                    <li>
-                        <strong>Sitio Web Personal de Currículum</strong>:
-                        Plataforma web semántica accesible, estructurada en HTML5 y estilizada con CSS3 responsivo.
-                    </li>
-                </ul>
-            </section>
+    <h2>Pasos para crear un proyecto</h2>
+    <ol class="lista-objetivos">
+        <li>Pensar una idea o necesidad.</li>
+        <li>Preparar la estructura del proyecto.</li>
+        <li>Utilizar HTML y herramientas de IA para desarrollarlo.</li>
+        <li>Probar el resultado y corregir errores.</li>
+        <li>Publicarlo en GitHub.</li>
+    </ol>
 
-            <!-- Metodología de trabajo -->
-            <section class="tarjeta">
-                <h2>Metodología y Ciclo de Vida del Software</h2>
-                <p>Pasos secuenciales seguidos en cada proyecto para garantizar calidad y robustez:</p>
-                <ol class="lista-metodologia">
-                    <li>Análisis y definición detallada de requisitos del usuario.</li>
-                    <li>Diseño de arquitectura de datos, diagramas de clases y prototipado visual.</li>
-                    <li>Implementación del código fuente con buenas prácticas y control de versiones con Git.</li>
-                    <li>Ejecución de pruebas funcionales, verificación de errores y despliegue final.</li>
-                </ol>
-            </section>
-        </main>
+    <img src="imagenes/proyecto.svg" width="300" alt="Imagen representativa de un proyecto" class="imagen">
 
-        <!-- Pie de página con copyright y contactos -->
-        <footer id="pie-pagina">
-            <p>&copy; 2026 Owais Raza &nbsp;|&nbsp; Todos los derechos reservados.</p>
-            <div class="enlaces-contacto">
-                <a href="https://github.com/owaisrazashe" target="_blank" rel="noopener">GitHub</a>
-                <span class="separador-punto">&bull;</span>
-                <a href="mailto:oraza@iesesteveterradas.cat">Correo electrónico</a>
-                <span class="separador-punto">&bull;</span>
-                <a href="tel:+34612345678">Teléfono (+34 612 345 678)</a>
-            </div>
-        </footer>
-    </div>
-
+    <footer id="peu">
+        <hr>
+        <p>© 2026 Owais</p>
+        <a href="https://github.com/greenman9909-cmd" target="_blank">GitHub</a> |
+        <a href="mailto:greenman9909@gmail.com">Correo electrónico</a> |
+        <a href="tel:+34640304032">Teléfono</a>
+    </footer>
 </body>
 </html>
